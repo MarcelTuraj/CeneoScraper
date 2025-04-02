@@ -6,14 +6,14 @@
 
  1. Wysłanie zapytania o dostęp do strony z opiniami o produkcie
  2. Jeśli operacja zakończy się suckesem i otrzymamy kod strony, wyodrębniamy z kodu strony fragmenty odpowiadające poszczególnym opinionm.
- 3. Dla każdej z opinii wydobywamy z kodu HTML poszczególnych składowych i zapisanie ich w postaci struktur danych.
+ 3. Dla każdej z opinii wydobywamy z kodu HTML poszczególne składowe i zapisanie ich w postaci struktur danych.
  4. Jeżeli istnieje kolejna strona z opiniami, to przechodzimy na kolejną i poowtórzenie procesu 1-4.
  5. Zapisanie wszystkich opinii w bazie danych
 
  ## Struktura opinii w serwisie Ceneo.pl
   |składowa|zmienna|selektor|
   |--------|-------|--------|
-  |opinia|review|.js_product-review|
+  |opinia|review|div.js_product-review|
   |identyfikator opinii|review_id|['data-entry_id']|
   |autor|author|.user-post__author-name|
   |rekomendacja|recommendation|.user-post__author-recomendation > em|
